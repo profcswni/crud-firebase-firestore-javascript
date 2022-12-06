@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+label {
+  @apply text-gray-500 py-4 font-bold;
+}
+
+img {
+  @apply rounded-full w-16 h-16 shadow-lg;
+}
+
+#comments p {
+  @apply text-gray-500 border-b border-gray-100;
+}
+
+#matriculas {
+  @apply col-span-2 sm:col-span-1 border-b border-gray-100 flex;
+}
+
+.btn {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn.btn-borrar{  
+  @apply bg-red-500 hover:bg-red-700;
+}
+
+thead > tr{
+  @apply border-b-2 border-blue-500
+}
+td{
+  @apply border-b border-blue-300 text-center
+}
+#matriculas_registradas img{
+  @apply mx-auto w-16 h-auto rounded-full
+}
