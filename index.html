@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Matrículas - CRUD con Firebase-FireStore</title>
+  <script type="module" crossorigin src="/assets/index.bd191abe.js"></script>
+  <link rel="stylesheet" href="/assets/index.ff24ff5b.css">
+</head>
+
+<body>
+  <div class="bg-blue-800 p-1 sm:p-4 text-white">
+    <nav class="flex justify-between items-center sm:container mx-auto m-1">
+      <div class="uppercase font-bold lg:text-[3em] text-center">
+        ↗️ Registro de matrículas
+      </div>
+      <div id="user" class="flex items-center gap-4">
+        <p id="userName" class="font-bold"></p>
+        <img id="userPhoto" class="w-16 h-16 rounded-full mr-4" src="" alt="">
+      </div>
+    </nav>
+  </div>
+
+  <p class="border-b-8 border-amber-600 mb-1 sm:mb-4"></p>
+
+  <!-- Crear un card con la foto de perfil del usuario y su nombre -->
+  <div class="flex flex-col sm:flex-row gap-4 container mx-auto p-2 sm:p-4">
+    <div class="w-full sm:w-4/12 sm:p-2 shadow-2xl rounded-2xl">
+      <p class="uppercase font-bold mt-8 text-lg">Crear una nueva matrícula</p>
+      <form action="" id="matriculaForm" class="flex flex-col">
+
+        <label for="nombres">Nombres</label>
+        <input placeholder="Nombres" class="border border-gray-300 p-2 rounded-lg" id="nombres" />
+
+        <label for="apellidos">apellidos</label>
+        <input placeholder="Apellidos" class="border border-gray-300 p-2 rounded-lg" id="apellidos" />
+
+        <label for="direccion">Dirección</label>
+        <input placeholder="Direccion domiciliar" class="border border-gray-300 p-2 rounded-lg" id="direccion" />
+
+        <label for="celular">Celular</label>
+        <input placeholder="# de celular" class="border border-gray-300 p-2 rounded-lg" id="celular" />
+        
+        <label for="content">Selecciona una foto</label>
+        <input type="file" name="image" id="image">
+        
+        <button id="btn" class="p-4 rounded-lg bg-orange-500 text-white my-4 w-auto">Guardar</button>
+      </form>
+    </div>
+    <div class="w-full sm:w-8/12">
+
+      <table class="w-full mt-4">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Foto</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Dirección</th>
+            <th>Celular</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="matriculas_registradas">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  
+</body>
+
+</html>
