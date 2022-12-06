@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/crud-firebase-firestore-javascript/'
+    /*Nombre del repositorio. Permite compilar correctamente al momento de publicar*/
+    base: '/crud-firebase-firestore-javascript/'
 })
