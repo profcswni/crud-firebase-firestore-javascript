@@ -13,21 +13,34 @@ En este ejercicio se guardan datos y objetos(imágenes).
 
 ## Instalación
 
-``` 
+Clonar el proyecto
+
+``` 'bash'
 git clone git@github.com:profcswni/crud-firebase-firestore-javascript.git 
 ```
 
-``` 
+Ingresar a la carpeta del proyecto
+
+``` 'bash'
 cd crud-firebase-firestore-javascript 
 ```
 
-``` 
-    npm install
+Instalar las dependencias
+
+``` 'bash'
+npm install
 ```
 
-``` 
+Iniciar el servidor en modo de desarrollo
+
+``` 'bash'
 npm run dev
 ```
 
+## Probar el proyecto
 
+Ahora ya se puede abrir el proyecto dentro del editar de codigo
 
+Se puede visitar el sitio abriendo en el navegador web
+
+[localhost](http://localhost:5173)
