@@ -13,16 +13,20 @@ En este ejercicio se guardan datos y objetos(imágenes).
 
 ## Instalación
 
-``` git clone git@github.com:profcswni/crud-firebase-firestore-javascript.git 
+``` 
+git clone git@github.com:profcswni/crud-firebase-firestore-javascript.git 
 ```
 
-``` cd crud-firebase-firestore-javascript 
+``` 
+cd crud-firebase-firestore-javascript 
 ```
 
-``` npm install
+``` 
+    npm install
 ```
 
-``` npm run dev
+``` 
+npm run dev
 ```
 
 
