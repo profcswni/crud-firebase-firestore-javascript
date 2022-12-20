@@ -1,17 +1,21 @@
 import './style.css'
 import { onGetMatriculas, guardarMatricula, editarMatricula, actualizarMatricula, eliminarMatricula } from './models/matricula'
-import { auth } from './firebase'
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { app, auth } from './firebase'
+import { signInWithPopup, GoogleAuthProvider,getRedirectResult, signInWithRedirect } from "firebase/auth";
+
 import { uploadImage } from './models/storage'
 
-let user = null;
+
+
+
+let user = window.localStorage.getItem('user');
 let id = null;
 let editando = false;
 
 const login = async () => {
   if (!localStorage.getItem('user')) {
     const provider = new GoogleAuthProvider();
-    const result = await signInWithPopup(auth, provider)
+    const result = await signInWithPopup(auth, provider);
     user = {
       name: result.user.displayName,
       photo: result.user.photoURL
